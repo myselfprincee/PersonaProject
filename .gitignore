@@ -1,41 +1,48 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ====================================================================
+# 🔥 CRITICAL BLOCKS FOR AZURE CREDIT PROTECTION (Heavy Context Directories)
+# ====================================================================
+node_modules/
+.next/
+out/
+build/
+dist/
+.turbo/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
+# ====================================================================
+# 🔒 ENVIRONMENT & PRIVATE SECURITY DATA (Never expose to AI context)
+# ====================================================================
+.env
+.env.local
+.env.development
+.env.production
+.env*.local
 *.pem
+*.key
+secrets*
 
-# debug
+# ====================================================================
+# 📦 PACKAGE MANAGER CACHES & LOCK ARTIFACTS
+# ====================================================================
+.pnpm-store/
+.pnpm-debug.log*
+pnpm-lock.yaml
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+.yarn/
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
+# ====================================================================
+# 💻 EDITOR, OPERATING SYSTEM & COMPILER TRASH
+# ====================================================================
+.DS_Store
+.idea/
+.vscode/
 *.tsbuildinfo
-next-env.d.ts
+*.log
+Thumbs.db
+
+# ====================================================================
+# 🚀 VERCEL & CI/CD DEPLOYMENT OVERHEAD
+# ====================================================================
+.vercel
+.github/
